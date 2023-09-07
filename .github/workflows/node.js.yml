@@ -26,7 +26,7 @@ jobs:
         run: npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           GITHUB_TOKEN: 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
           BRANCH: main # The branch the action will deploy to
