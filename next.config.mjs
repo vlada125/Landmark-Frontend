@@ -2,9 +2,11 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    loader: "default",
-    domains: ["localhost"],
+    loader: "akamai",
+    // domains: ["localhost"],
+    path: ''
   },
+  assetPrefix: './',
   swcMinify: true,
   experimental: {
     newNextLinkBehavior: true,
