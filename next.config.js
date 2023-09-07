@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: false,
   images: {
-    loader: "akamai",
-    // domains: ["localhost"],
+    loader: "default",
+    domains: ["localhost"],
     path: ''
   },
   assetPrefix: './',
