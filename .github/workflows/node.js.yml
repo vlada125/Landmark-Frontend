@@ -13,9 +13,9 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.4.2
+        uses: actions/checkout@v2.5.1
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v2.4.0
+        uses: actions/setup-node@v2.5.1
         with:
           node-version: '16.x'
 
@@ -26,8 +26,8 @@ jobs:
         run: npm run build && npm run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main # The branch the action will deploy to
           FOLDER: out # The folder the action will deploy to
